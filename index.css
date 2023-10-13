@@ -28,7 +28,9 @@ body {
 
 .check-img input[type='checkbox']{
     appearance: none;
-    background-image: url(./img/background-check_img.svg);
+    border: 1px solid #DADAB6;
+    border-radius: 50%;
+    background: #F3F3EF;
     position: relative;
     cursor: pointer;
 }
@@ -43,11 +45,10 @@ body {
     transform: scale(0);
     transform-origin: bottom left;
     transition: 120ms transform ease-in-out;
-    box-shadow: inset 1em 1em var(--form-control-color);
 }
 input[type="checkbox"]:checked::before {
     transform: scale(1);
-  }
+}
 .input-icon {
     width: 28px;
     height: 28px;
